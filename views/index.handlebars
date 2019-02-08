@@ -2,7 +2,7 @@
 <head>
 	<title>Delphi Home</title>
 	<meta charset="utf-8">
-
+	<meta name="messageBoard" content="width=device-width, initial-scale=1.0">
 
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js>"></script>
@@ -16,14 +16,28 @@
 <body>
 	<div class="container">>
 		<!-- header -->
-		<h1 class="jumbotron">Name Last</h1>
+		<div class="jumbotron">
+			<div style="float:left;">
+				<h1 id="nameHeading">Name</h1>
+			</div>
+			<div style="float:right;">
+				<h3 id="lastHeading">Last</h3>
+			</div>
+			<hr>
+		</div>
+		
 
 		<!-- chat template -->
 		{{#each chats}}
-			<div>
-				<img src="{{imageURL}}">
-				<h3><a href="chat.handlebars">{{name}}</h3>
-				<p>{{last}}</p>
+			<div class="container">
+				<div style="float:left;">
+					<img class="img-circle" src="{{imageURL}}">
+				</div>
+				<div style="float:right;">
+					<!-- Can't get this link to the chat page working -->
+					<h3><a href="/views/chat.handlebars">{{name}}</a></h3>
+					<p>{{last}}</p>
+				</div>
 			</div>
 		{{/each}}
 

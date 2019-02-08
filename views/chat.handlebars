@@ -15,7 +15,21 @@
 </head>
 <body>
 	<div class="container">
+		<!-- header -->
+		<div class="header">
+			<h3 id="nameHeading">Name</h3>
+			<h3 id="lastHeading">Last</h3>
+		</div>
 
+		<!-- chat template -->
+		{{#each messages}}
+			<div>
+				<img class="img-circle" src="{{imageURL}}">
+				<h3><a href="/views/chat.handlebars">{{name}}</h3>
+				<p>{{last}}</p>
+				<hr>
+			</div>
+		{{/each}}
 	</div>
 
 
