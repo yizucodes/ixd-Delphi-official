@@ -15,5 +15,53 @@
 			"name" : "Jimmy",
 			"last" : "2 Weeks"
 		}
+	],
+	"messages" : [
+		{
+			"text" : "Talk to you later.",
+			"ago" : "3 Months"
+		}
+	],
+	"suggestions" : [
+		{
+			"source" : "Forbes",
+			"imageURL" : "",
+			"title" : "",
+			"summary" : "",
+			"link" : ""
+		},
+		{
+			"source" : "ESPN",
+			"imageURL" : "",
+			"title" : "",
+			"summary" : "",
+			"link" : ""
+		},
+		{
+			"source" : "Meme",
+			"imageURL" : "",
+			"title" : "",
+			"summary" : "",
+			"link" : ""
+		},
+		{
+			"source" : "MSNBC",
+			"imageURL" : "",
+			"title" : "",
+			"summary" : "",
+			"link" : ""
+		}
+
 	]
 }
+
+
+
+
+
+
+
+
+
+
+
