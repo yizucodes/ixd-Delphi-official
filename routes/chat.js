@@ -2,7 +2,6 @@ var data = require("../data.json");
 
 exports.view = function(request, response) {    
 	// Your code goes here
-	response.render('chat', {
-		'name': '',
-	});
+	console.log(data)
+	response.render('chat', {'name': ''});
  };
