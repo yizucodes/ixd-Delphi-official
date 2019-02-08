@@ -1,0 +1,19 @@
+{
+	"chats" : [
+		{
+			"imageURL" : "http://lorempixel.com/500/500/people",
+			"name" : "Benjamin",
+			"last" : "3 Months"
+		},
+		{
+			"imageURL" : "http://lorempixel.com/500/500/people",
+			"name" : "Carol",
+			"last" : "1 Month"
+		},
+		{
+			"imageURL" : "http://lorempixel.com/500/500/people",
+			"name" : "Jimmy",
+			"last" : "2 Weeks"
+		}
+	]
+}
