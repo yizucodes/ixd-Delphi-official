@@ -2,7 +2,7 @@
 /*
  * GET home page.
  */
-var data = require('../data.json');
+var data = require('../contacts.json');
 
 exports.view = function(req, res){
 	console.log(data);

@@ -1,4 +1,4 @@
-var data = require("../data.json");
+var data = require("../contacts.json");
 
 exports.view = function(request, response) { 
 	// Your code goes here

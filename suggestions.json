@@ -1,0 +1,33 @@
+{
+	"suggestions" : [
+		{
+			"source" : "Forbes",
+			"imageURL" : "",
+			"title" : "",
+			"summary" : "",
+			"link" : ""
+		},
+		{
+			"source" : "ESPN",
+			"imageURL" : "",
+			"title" : "",
+			"summary" : "",
+			"link" : ""
+		},
+		{
+			"source" : "Meme",
+			"imageURL" : "",
+			"title" : "",
+			"summary" : "",
+			"link" : ""
+		},
+		{
+			"source" : "MSNBC",
+			"imageURL" : "",
+			"title" : "",
+			"summary" : "",
+			"link" : ""
+		}
+
+	]
+}
