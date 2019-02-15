@@ -18,6 +18,14 @@
 	],
 	"messages" : [
 		{
+			"text" : "Yeah I'll let you know",
+			"ago" : "3 months"
+		},
+		{
+			"text" : "Merry christmas man!",
+			"ago" : "3 months"
+		},
+		{
 			"text" : "Talk to you later.",
 			"ago" : "3 Months"
 		}
