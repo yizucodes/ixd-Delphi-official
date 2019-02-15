@@ -20,8 +20,9 @@ function statusChangeCallback(response) {
 
 function changeUser(response) {
   // empty
-  console.log(response)
-  $('.facebookLogin').hide()
-  $('#username').text(response.name)
-  $('#profilePicture').attr("src",response.picture.data.url)
+  console.log(response);
+  $('.facebookLogin').hide();
+  $('#username').text(response.name);
+  $('#profilePicture').attr("src",response.picture.data.url);
+  //will this upload
 }
