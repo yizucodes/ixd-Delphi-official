@@ -7,7 +7,6 @@
 $(document).ready(function() {
 	initializePage();
 })
-
 /*
  * Function that is called when the document is ready.
  */
@@ -18,11 +17,19 @@ function initializePage() {
         $(".jumbotron p").addClass("active");
 	});
 
-    $("a.thumbnail").click(projectClick);
+    //$("a.thumbnail").click(projectClick);
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
+
+	$("#myForm").click()
 }
 
+function addTextMessage(e) {
+	//
+}
+
+function addChat
+/*
 function projectClick(e) {
     e.preventDefault();
     $(this).css("background-color", "#7fff00");
@@ -36,3 +43,4 @@ function projectClick(e) {
         $(description).fadeToggle();
     }
 }
+*/

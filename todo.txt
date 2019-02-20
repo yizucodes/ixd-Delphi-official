@@ -1,0 +1,21 @@
+todo.txt
+
+
+
+A7
+
+
+
+//Delete 3rd page
+
+
+
+//js code for message append
+//add conversations for each person to data.json
+//add "intelligent" suggestions - news examples to our data.json
+//Add 3-4 boxes for the suggestions as captioned thumbnails
+
+
+
+//js code for chat append
+	//only give options from contacts
