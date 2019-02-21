@@ -11,24 +11,24 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Javascript has taken control");
-        $("#testjs").text("Please wait...");
-        $(".jumbotron p").addClass("active");
-	});
-
-    //$("a.thumbnail").click(projectClick);
-	// Add any additional listeners here
-	// example: $("#div-id").click(functionToCall);
-
-	$("#myForm").click()
+    //
 }
 
-function addTextMessage(e) {
-	//
+function addMessage() {
+    var x = document.getElementById("textMessage");
+    var message = "";
+    var i;
+    for (i = 0; i < x.length; i++) {
+        message += x.elements[i].value;
+    }
+    var ago = "Just now";
+    document.getElementById("newMessageText").text = message;
+    document.getElementById("newMessageAgo").text = ago;
 }
 
-function addChat
+function addChat {
+    //
+}
 /*
 function projectClick(e) {
     e.preventDefault();

@@ -5,17 +5,28 @@ todo.txt
 A7
 
 
-
-//Delete 3rd page
-
-
-
-//js code for message append
-//add conversations for each person to data.json
-//add "intelligent" suggestions - news examples to our data.json
-//Add 3-4 boxes for the suggestions as captioned thumbnails
+OH questions 2.21.19:
+Why don't my pictures show up?
+Help getting message area to be width of the screen
 
 
 
+
+Yi:
 //js code for chat append
 	//only give options from contacts
+//FAQ page
+//Link the front page to the FAQ
+
+
+Alex:
+//Add 3-4 boxes for the suggestions as captioned thumbnails
+//js code for message append
+//custom chain of messages with distinct topic for each of the conversations
+//add "intelligent" suggestions - news examples to our data.json
+
+
+
+
+Done:
+//Delete 3rd page & fix text box - Alex

@@ -1,12 +1,14 @@
 <html>
 <head>
+
+
+
 	<title>Your Chat</title>
 	<meta charset="utf-8">
-
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js>"></script>
-
+	<script src="js/chat.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -16,6 +18,8 @@
 </head>
 <body>
 	<div class="container">
+
+
 		<!-- header -->
 		<div class="skinnyJumbotron">
 			<div style="align-items:left">
@@ -31,20 +35,28 @@
 			</div>
 			<hr>
 		</div>
-
 		<!-- chat template -->
 		{{#each messages}}
-			<div id="textBox">
+			<div class="text">
 				<h3>{{text}}</h3>
 				<p>{{ago}}</p>
 				<hr>
 			</div>
 		{{/each}}
-		<div style="float: right" class="chat-popup" id="myForm">
-    <textarea placeholder="Type a message.." name="msg"></textarea>
-		<a href="reply">Send</a>
-</div>
-	</div>
+		<div class="text" id="newText">>
+			<h3 id="newMessageText">Hey</h3>
+			<p id="newMessageAgo">Loop</p>
+			<hr>
+		</div>
+		<!--Text box to type on left, suggestions on right - flip for A/B testing-->
+		<div>
+			<form id="textMessage">
+  				<input type="text" name="userMessage">
+  				<input type="submit" onclick="addMessage()" value="Send">
+			</form>
+		</div>
 
+
+	</div>
 </body>
 </html>
