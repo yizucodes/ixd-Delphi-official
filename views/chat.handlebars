@@ -9,6 +9,18 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js>"></script>
 	<script src="js/chat.js"></script>
+	<script language="JavaScript">
+		function showInput() {
+			var message = document.getElementById("user_input").value;
+			var messageNode = document.createTextNode(message);
+			var paragraph = document.createElement('P'); //creates a <p> element
+			paragraph.appendChild(messageNode);
+			var container = document.getElementById('display');
+
+			container.appendChild(paragraph);
+		}
+
+	</script>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -36,6 +48,7 @@
 			<hr>
 		</div>
 		<!-- chat template -->
+
 		{{#each messages}}
 			<div class="text">
 				<h3>{{text}}</h3>
@@ -43,20 +56,22 @@
 				<hr>
 			</div>
 		{{/each}}
+
 		<div class="text" id="newText">>
-			<h3 id="newMessageText">Hey</h3>
-			<p id="newMessageAgo">Loop</p>
+			<h3 id="newMessageText"></h3>
+			<p id="newMessageAgo">Just now</p>
 			<hr>
 		</div>
-		<!--Text box to type on left, suggestions on right - flip for A/B testing-->
-		<div>
-			<form id="textMessage">
-  				<input type="text" name="userMessage">
-  				<input type="submit" onclick="addMessage()" value="Send">
-			</form>
-		</div>
 
+		<form>
+			<label><b>Enter a Message</b></label>
+			<input type="text" name="message" id="user_input">
+		</form>
 
-	</div>
-</body>
-</html>
+		<input type="submit" onclick="showInput();"><br/>
+		<label>Your input: </label>
+		<p><span id='display'></span></p>
+
+		</body>
+
+	</html>
