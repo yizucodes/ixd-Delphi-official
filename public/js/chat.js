@@ -26,7 +26,7 @@ function addMessage() {
     document.getElementById("newMessageAgo").text = ago;
 }
 
-function addChat {
+function addChat() {
     //
 }
 /*
