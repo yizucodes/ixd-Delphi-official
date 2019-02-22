@@ -11,15 +11,17 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-    $("#userSub").on( "click", addMessage() );
+    $("#userSub").on("click", function(){
+        var umsg = ($("#usermsg").val());
+        $("#messageChain").append("<p>"+umsg+"</p>");
+        $("#usermsg").val("");
+    });
 }
-
+/*
 function addMessage() {
-    var umsg = ($("#usermsg").val());
-    $("#messageChain").append("<p>"+umsg+"</p>");
-    $("#usermsg").val("");
-}
 
+}
+*/
 function addChat() {
     //
 }
