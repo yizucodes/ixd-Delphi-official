@@ -49,20 +49,20 @@
 			<hr>
 		</div>
 		<!-- chat template -->
-
-		{{#each messages}}
-			<div class="text">
-				<h3>{{text}}</h3>
-				<p>{{ago}}</p>
-				<hr>
-			</div>
-		{{/each}}
+		<div class="container" id="messageChain">
+			{{#each messages}}
+				<div class="text">
+					<h3>{{text}}</h3>
+					<p>{{ago}}</p>
+					<hr>
+				</div>
+			{{/each}}
+		</div>
 
 
 		<!-- Text message box -->
 		<div>
   			<input id="usermsg" type="text" name="userMessage">
-
   			<!-- <input type="submit" onclick="addMessage()" value="Send"> -->
 			<button id = "userSub" type="button" name="button" class="btn btn-primary">Send</button>
 		</div>

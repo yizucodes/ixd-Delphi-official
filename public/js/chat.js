@@ -11,22 +11,13 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-    $("#userSub").on("click", function(){
-    var umsg = ($("#usermsg").val());
-    $("#newText").append("<p>"+umsg+"</p>");
-    $("#usermsg").val("");
+    $("#userSub").on( "click", addMessage() );
 }
 
 function addMessage() {
-    var x = document.getElementById("textMessage");
-    var message = "";
-    var i;
-    for (i = 0; i < x.length; i++) {
-        message += x.elements[i].value;
-    }
-    var ago = "Just now";
-    document.getElementById("newMessageText").text = message;
-    document.getElementById("newMessageAgo").text = ago;
+    var umsg = ($("#usermsg").val());
+    $("#messageChain").append("<p>"+umsg+"</p>");
+    $("#usermsg").val("");
 }
 
 function addChat() {
