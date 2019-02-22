@@ -6,10 +6,8 @@ A7
 
 
 OH questions 2.21.19:
-Why don't my pictures show up?
-Help getting message area to be width of the screen
 How do we pass the name & it's info along to the chat page?
-Best way to get my 3 tile structure
+
 
 
 Yi:
@@ -37,3 +35,5 @@ Alex:
 Done:
 //Delete 3rd page & fix text box - Alex
 //improve front page  - Alex
+Why don't my pictures show up? --> imgur
+Best way to get my 3 tile structure -->

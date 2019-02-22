@@ -9,20 +9,6 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js>"></script>
 	<script src="js/chat.js"></script>
-	<!--
-	<script language="JavaScript">
-		function showInput() {
-			var message = document.getElementById("user_input").value;
-			var messageNode = document.createTextNode(message);
-			var paragraph = document.createElement('P'); //creates a <p> element
-			paragraph.appendChild(messageNode);
-			var container = document.getElementById('display');
-
-			container.appendChild(paragraph);
-		}
-
-	</script>
-	-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -41,13 +27,11 @@
 						Back to Contacts
 					</button>
 				</a>
-				<h3 id="nameHeading">Benjamin</h3>
-			</div>
-			<div style="float:right;">
-				<img class="img-circle" src="../photos/clock.png">
+				<h3 id="nameHeading">Message History</h3>
 			</div>
 			<hr>
 		</div>
+		<hr>
 		<!-- chat template -->
 		<div class="container" id="messageChain">
 			{{#each messages}}
@@ -62,26 +46,11 @@
 
 		<!-- Text message box -->
 		<div>
-  			<input id="usermsg" type="text" name="userMessage">
+  			<input id="usermsg" type="text" name="userMessage" style="border:solid">
   			<!-- <input type="submit" onclick="addMessage()" value="Send"> -->
 			<button id = "userSub" type="button" name="button" class="btn btn-primary">Send</button>
-		</div>
-		<!--
-		<div class="text" id="newText">>
-			<h3 id="newMessageText"></h3>
-			<p id="newMessageAgo">Just now</p>
 			<hr>
 		</div>
-
-		<form>
-			<label><b>Enter a Message</b></label>
-			<input type="text" name="message" id="user_input">
-		</form>
-
-		<input type="submit" onclick="showInput();"><br/>
-		<label>Your input: </label>
-		<p><span id='display'></span></p>
-		-->
 
 
 		<!-- Suggestions -->

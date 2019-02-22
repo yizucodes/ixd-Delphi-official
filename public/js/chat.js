@@ -12,8 +12,8 @@ $(document).ready(function() {
  */
 function initializePage() {
     $("#userSub").on("click", function(){
-        var umsg = ($("#usermsg").val());
-        $("#messageChain").append("<p>"+umsg+"</p>");
+        var umsg = "Me: " + ($("#usermsg").val());
+        $("#messageChain").append("<h3>"+umsg+"</h3><p>Just now<p><hr>");
         $("#usermsg").val("");
     });
 }
