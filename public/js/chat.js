@@ -5,38 +5,42 @@
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-	initializePage();
+	listenForMessage();
+    listenForSuggestion1();
+    listenForSuggestion2();
+    listenForSuggestion3();
 });
 /*
  * Function that is called when the document is ready.
  */
-function initializePage() {
+function listenForMessage() {
     $("#userSub").on("click", function(){
-        var umsg = "Me: " + ($("#usermsg").val());
-        $("#messageChain").append("<h3>"+umsg+"</h3><p>Just now<p><hr>");
+        var umsg = ($("#usermsg").val());
+        //Put if statement here for blank entry
+        $("#messageChain").append("<h3 style='color:green'>Me: </h3><h3>"+umsg+"</h3><p>Just now</p><hr>");
         $("#usermsg").val("");
     });
 }
-/*
-function addMessage() {
 
+function listenForSuggestion1() {
+    $('#suggest1').on("click", function() {
+        $("#messageChain").append("<h3><a href='https://es.pn/2E0dG8e'>Zion Williamson Sprains Knee</a></h3><p>Just now</p><hr>");
+        $("#card1").hide()
+    });
 }
-*/
-function addChat() {
-    //
+
+function listenForSuggestion2() {
+    $('#suggest2').on("click", function() {
+        $("#messageChain").append("<h3><a href='https://es.pn/2GC4uux'>Boeheim Hit 'n' Run</a></h3><p>Just now</p><hr>");
+        $("#card2").hide();
+    });
 }
-/*
-function projectClick(e) {
-    e.preventDefault();
-    $(this).css("background-color", "#7fff00");
-    
-    //New Stuff Lab 3
-    var containingProject = $(this).closest(".project");
-    var description = $(containingProject).find(".project-description");
-    if (description.length == 0) {
-        $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
-    } else {
-        $(description).fadeToggle();
-    }
+
+function listenForSuggestion3() {
+    $('#suggest3').on("click", function() {
+        $("#messageChain").append("<h3><a href='https://yhoo.it/2NjQbew'>March Madness Preview</a></h3><p>Just now</p><hr>");
+        $("#card3").hide();
+    });
 }
-*/
+
+

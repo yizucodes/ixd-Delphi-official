@@ -37,7 +37,7 @@
 			{{#each messages}}
 				<div class="text">
 					<h3>{{text}}</h3>
-					<p>{{ago}}</p>
+					<p style="color:red">{{time}}</p>
 					<hr>
 				</div>
 			{{/each}}
@@ -57,38 +57,40 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<h5 style="float:left;">Conversation Starters</h5>
+					<h4 style="float:left;">Conversation Starters</h4>
 				</div>
 			</div>
+			<hr>
 			<div class="row">
-			  <div class="col-sm-4">
-			    <div class="card">
+			  <div class="col-sm-4" id="firstSuggestion">
+			    <div class="card" id="card1">
 			      <div class="card-body">
-			        <h5 class="card-title">Special title treatment</h5>
+			        <h5 class="card-title">1) Zion Williamson Sprains Knee</h5>
 			        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-			        <a href="#" class="btn btn-primary">Go somewhere</a>
+			        <a href="#" id="suggest1" class="btn btn-primary">Send Link</a>
 			      </div>
 			    </div>
 			  </div>
 			  <div class="col-sm-4">
-			    <div class="card">
+			    <div class="card" id="card2">
 			      <div class="card-body">
-			        <h5 class="card-title">Special title treatment</h5>
+			        <h5 class="card-title">2) Boeheim Hit 'n' Run</h5>
 			        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-			        <a href="#" class="btn btn-primary">Go somewhere</a>
+			        <a href="#" id="suggest2" class="btn btn-primary">Send Link</a>
 			      </div>
 			    </div>
 			  </div>
 			  <div class="col-sm-4">
-			    <div class="card">
+			    <div class="card" id="card3">
 			      <div class="card-body">
-			        <h5 class="card-title">Special title treatment</h5>
+			        <h5 class="card-title">3) March Madness Preview</h5>
 			        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-			        <a href="#" class="btn btn-primary">Go somewhere</a>
+			        <a href="#" id="suggest3" class="btn btn-primary">Send Link</a>
 			      </div>
 			    </div>
 			  </div>
 			</div>
+			<hr>
 		</div>
 
 </body>

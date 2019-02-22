@@ -126,6 +126,23 @@
 				}
 			]
 		}
+	],
+	"messages" : [
+		{
+			"text" : "Great game last night",
+			"time" : "5 months ago",
+			"color" : "red"
+		},
+		{
+			"text" : "Big win for UK tonight!",
+			"time" : "3 months ago",
+			"color" : "red"
+		},
+		{
+			"text" : "Let me know if you want to scope out more tickets",
+			"time" : "1 month ago",
+			"color" : "red"
+		}
 	]
 }
 
