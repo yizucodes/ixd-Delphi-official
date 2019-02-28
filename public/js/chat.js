@@ -9,6 +9,7 @@ $(document).ready(function() {
 	listenForMessage();
     listenForSuggestions();
     listenForRefresh();
+    //listenForMemes();
 });
 /*
  * Function that is called when the document is ready.
@@ -19,7 +20,12 @@ function initializePage() {
     $("#card6").hide();
 }
 
+/*
+listenForMemes() {
+    listenMeme1...
 
+}
+*/
 function listenForSuggestions() {
     listenForSuggestion1();
     listenForSuggestion2();
