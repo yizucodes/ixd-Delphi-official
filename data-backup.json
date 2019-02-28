@@ -1,0 +1,159 @@
+{
+	"contacts" : [
+		{
+			"name" : "Benjamin",
+			"last" : "1 month ago",
+			"imageURL" : "http://lorempixel.com/500/500/people",
+			"messages" : [
+				{
+					"text" : "Great game last night",
+					"time" : "5 months ago",
+					"color" : "red"
+				},
+				{
+					"text" : "Big win for UK tonight!",
+					"time" : "3 months ago",
+					"color" : "red"
+				},
+				{
+					"text" : "Let me know if you want to scope out more tickets",
+					"time" : "1 month ago",
+					"color" : "red"
+				}
+			],
+			"suggestions" : [
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				},
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				},
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				}
+			]
+		},
+		{
+			"name" : "Carol",
+			"last" : "2 weeks ago",
+			"imageURL" : "http://lorempixel.com/500/500/people",
+			"messages" : [
+				{
+					"text" : "Let me know when you've submitted the project",
+					"time" : "2 months ago",
+					"color" : "red"
+				},
+				{
+					"text" : "Big win for UK tonight!",
+					"time" : "3 weeks ago",
+					"color" : "yellow"
+				},
+				{
+					"text" : "Let me know if you want to scope out more tickets",
+					"time" : "2 weeks ago",
+					"color" : "yellow"
+				}
+			],
+			"suggestions" : [
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				},
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				},
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				}
+			]
+		},
+		{
+			"name" : "Mike",
+			"last" : "5 hours ago",
+			"imageURL" : "http://lorempixel.com/500/500/people",
+			"messages" : [
+				{
+					"text" : "Just got the new camera!",
+					"time" : "1 week ago",
+					"color" : "yellow"
+				},
+				{
+					"text" : "Hey man, going to the beach for pictures.",
+					"time" : "5 hours ago",
+					"color" : "green"
+				},
+				{
+					"text" : "Do you want to come?",
+					"time" : "5 hours ago",
+					"color" : "green"
+				}
+			],
+			"suggestions" : [
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				},
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				},
+				{
+					"title" : "placeHolder",
+					"imageURL" : "http://lorempixel.com/500/500/people",
+					"summary" : "placeHolder",
+					"link" : "http://google.com"
+				}
+			]
+		}
+	],
+	"messages" : [
+		{
+			"text" : "Great game last night",
+			"time" : "5 months ago",
+			"color" : "red"
+		},
+		{
+			"text" : "Big win for UK tonight!",
+			"time" : "3 months ago",
+			"color" : "red"
+		},
+		{
+			"text" : "Let me know if you want to scope out more tickets",
+			"time" : "1 month ago",
+			"color" : "red"
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+

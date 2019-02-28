@@ -48,13 +48,12 @@
 			<hr>
 		</div>
 		<!-- chat template -->
-		{{#each contacts}}
+		<!--
+		{{#each contacts}} 
 			<div class="container">
-				{{log name}}
 				<div style="float:left;">
-					<!-- Can't get this link to the chat page working -->
 					<div style="float:right;">
-						<h3><a href="chat">{{name}}</a></h3>
+						<h3><a href="chat/">{{name}}</a></h3>
 					</div>
 					<div style="float:left">
 						<img class="img-circle" src="{{imageURL}}">
@@ -66,6 +65,22 @@
 			</div>
 			<hr>
 		{{/each}}
+		-->
+		<div class="container" id="benjaminChat"> <!-- later make it so this pops up after logging in -->
+			<div style="float:left;">
+				<div style="float:right;">
+					<h3><a href="chat">Benjamin</a></h3>
+				</div>
+				<div style="float:left">
+					<img class="img-circle" src="https://i.imgur.com/V5IJAXS.jpg?1">
+				</div>
+			</div>
+			<div style="float:right;">
+					<p ><font color="red">1 month</font></p>
+			</div>
+		</div>
+		<hr>
+
 	</div>
 </body>
 </html>
