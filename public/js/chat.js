@@ -6,7 +6,7 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
     initializePage();
-	listenForMessage();
+	  listenForMessage();
     listenForSuggestions();
     listenForRefresh();
     //listenForMemes();
@@ -124,5 +124,3 @@ function listenForSuggestion6() {
         originalSuggestions();
     });
 }
-
-
