@@ -13,6 +13,8 @@ var index = require('./routes/index');
 
 var chat = require('./routes/chat');
 
+
+
 // var user = require('./routes/user');
 
 var app = express();
@@ -41,7 +43,7 @@ app.get('/', index.view);
 app.get('/chat', chat.view);
 
 //Version b
-app.get('/chat/b', chat.view2);
+app.get('/chatb', chat.view2);
 // Example route
 // app.get('/users', user.list);
 
