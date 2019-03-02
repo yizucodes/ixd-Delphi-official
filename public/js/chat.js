@@ -9,7 +9,7 @@ $(document).ready(function() {
 	  listenForMessage();
     listenForSuggestions();
     listenForRefresh();
-    //listenForMemes();
+    listenForMemes();
 });
 /*
  * Function that is called when the document is ready.
@@ -18,14 +18,14 @@ function initializePage() {
     $("#card4").hide();
     $("#card5").hide();
     $("#card6").hide();
+
+// //Hide 3 memes
+//     $("#meme4").hide();
+//     $("#meme5").hide();
+//     $("#meme6").hide();
 }
 
-/*
-listenForMemes() {
-    listenMeme1...
 
-}
-*/
 function listenForSuggestions() {
     listenForSuggestion1();
     listenForSuggestion2();
@@ -34,6 +34,17 @@ function listenForSuggestions() {
     listenForSuggestion5();
     listenForSuggestion6();
 }
+
+//Listener for memes
+function listenForMemes() {
+  listenForMeme1();
+  listenForMeme2();
+  listenForMeme3();
+  listenForMeme4();
+  listenForMeme5();
+  listenForMeme6();
+}
+
 
 function newSuggestions() {
     $("#card1").hide();
@@ -44,6 +55,18 @@ function newSuggestions() {
     $("#card6").show();
 }
 
+//New meme suggestions
+//
+// function newMemes() {
+//   $("#meme1").hide();
+//   $("#meme2").hide();
+//   $("#meme3").hide();
+//   $("#meme4").show();
+//   $("#meme5").show();
+//   $("#meme6").show();
+// }
+
+
 function originalSuggestions() {
     $("#card1").show();
     $("#card2").show();
@@ -52,6 +75,16 @@ function originalSuggestions() {
     $("#card5").hide();
     $("#card6").hide();
 }
+
+//Original memes
+// function originalSuggestions() {
+//     $("#meme1").show();
+//     $("#meme2").show();
+//     $("#meme3").show();
+//     $("#meme4").hide();
+//     $("#meme5").hide();
+//     $("#meme6").hide();
+// }
 
 function listenForRefresh() {
     $("#refresh").on("click", function(){
@@ -121,6 +154,61 @@ function listenForSuggestion5() {
 function listenForSuggestion6() {
     $('#suggest6').on("click", function() {
         $("#messageChain").append("<h3><a href='https://es.pn/2BWCHkF' target='_blank'>Bagley Exits with Knee Sprain</a></h3><p>Just now</p><hr>");
+        originalSuggestions();
+    });
+}
+
+//Append meme1 to chat history
+function listenForMeme1() {
+    $('#meme1').on("click", function() {
+
+      // $('#test').html('<img src="/static/on.png" height="64px" width="64px">');
+        $("#messageChain").append('<img src="https://i.imgflip.com/1uve1v.jpg" height:"300px" width="300px"></h3><p>Just now</p><hr>');
+        originalSuggestions();
+    });
+}
+
+function listenForMeme2() {
+    $('#meme2').on("click", function() {
+
+      // $('#test').html('<img src="/static/on.png" height="64px" width="64px">');
+        $("#messageChain").append('<img src="https://i.pinimg.com/236x/23/87/b8/2387b81ae6ecb2a9213609d8d6a63566--basketball-memes-kentucky.jpg" height:"300px" width="300px"></h3><p>Just now</p><hr>');
+        originalSuggestions();
+    });
+}
+
+function listenForMeme3() {
+    $('#meme3').on("click", function() {
+
+      // $('#test').html('<img src="/static/on.png" height="64px" width="64px">');
+        $("#messageChain").append('<img src="http://www.quickmeme.com/img/7d/7d57bae605b36c8a246205c9fa15889e347b55b7d92a39e2db943c758a43e91d.jpg" height:"300px" width="300px"></h3><p>Just now</p><hr>');
+        originalSuggestions();
+    });
+}
+
+function listenForMeme4() {
+    $('#meme4').on("click", function() {
+
+      // $('#test').html('<img src="/static/on.png" height="64px" width="64px">');
+        $("#messageChain").append('<img src="https://i.pinimg.com/originals/2b/f2/50/2bf250fd05ebffdc435949556849fd84.jpg" height:"300px" width="300px"></h3><p>Just now</p><hr>');
+        originalSuggestions();
+    });
+}
+
+function listenForMeme5() {
+    $('#meme5').on("click", function() {
+
+      // $('#test').html('<img src="/static/on.png" height="64px" width="64px">');
+        $("#messageChain").append('<img src="https://www.memesmonkey.com/images/memesmonkey/34/34d7569201e4022e27fde8201ca795ad.jpeg" height:"300px" width="300px"></h3><p>Just now</p><hr>');
+        originalSuggestions();
+    });
+}
+
+function listenForMeme6() {
+    $('#meme6').on("click", function() {
+
+      // $('#test').html('<img src="/static/on.png" height="64px" width="64px">');
+        $("#messageChain").append('<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/17505330_1687244087971478_5405604458972516134_o.jpg?_nc_cat=105&_nc_ht=scontent-lax3-1.xx&oh=60b8c015eaabf85333cc9de1eeb56cc7&oe=5CE951A2" height:"300px" width="300px"></h3><p>Just now</p><hr>');
         originalSuggestions();
     });
 }
