@@ -28,14 +28,24 @@
 
 
 		<!-- header -->
-		<div class="skinnyJumbotron">
-			<div style="align-items:left">
-				<a href="/">
-					<button type="button" class="btn btn-default btn-sm">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="/">
+					<button type="button" align="left" class="btn btn-default btn-sm">
 						Back to Contacts
 					</button>
-				</a>
-				<h3 id="nameHeading">Message History</h3>
+					</a>
+				</div>
+				<div class="col-sm-6">
+					<h3 id="nameHeading" align="right">Message History</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<!-- <h1 align="center" style="color:#428bca"> Delphi </h1> -->
+					<img src="https://imgur.com/C6z3wWB" align="center">
+				</div>
 			</div>
 			<hr>
 		</div>
@@ -66,7 +76,8 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h4 style="float:left;">Conversation Starters</h4>
-					<button type="button" class="btn btn-default btn-sm" id="refresh" style="float:right;">Refresh Suggestions</button>
+					<button type="button" class="btn btn-default btn-sm" id="refreshArticles" style="float:right;">Refresh Articles</button>
+					<button type="button" class="btn btn-default btn-sm" id="refreshMemes" style="float:right;">Refresh Memes</button>
 				</div>
 			</div>
 			<hr>
@@ -127,9 +138,55 @@
 			      </div>
 			    </div>
 			  </div>
+			</div>
+			<hr>
+
+			<div class="row">
+			  <div class="col-sm-4">
+			    <div class="card" id="card7">
+			      <div class="card-body">
+			        <img src="https://i.imgflip.com/1uve1v.jpg" alt="meme1" length="200" width="200">
+							<a href="#" id="meme1" class="btn btn-primary">Send Meme</a>
+			      </div>
+			    </div>
+			    <div class="card" id="card8">
+			      <div class="card-body">
+              		<img src="https://i.pinimg.com/originals/2b/f2/50/2bf250fd05ebffdc435949556849fd84.jpg" alt="meme4" length="200" width="200">
+			        <a href="#" id="meme4" class="btn btn-primary">Send Meme</a>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-4">
+			    <div class="card" id="card9">
+			      <div class="card-body">
+			        <img src="https://i.pinimg.com/236x/23/87/b8/2387b81ae6ecb2a9213609d8d6a63566--basketball-memes-kentucky.jpg" alt="meme2" length="200" width="200">
+			        <a href="#" id="meme2" class="btn btn-primary">Send Meme</a>
+			      </div>
+			    </div>
+			    <div class="card" id="card10">
+			      <div class="card-body">
+			        <img src="https://www.memesmonkey.com/images/memesmonkey/34/34d7569201e4022e27fde8201ca795ad.jpeg" alt="meme5" length="200" width="200">
+			        <a href="#" id="meme5" class="btn btn-primary">Send Meme</a>
+			      </div>
+			    </div>
+			  </div>
 
 
-
+			  <div class="col-sm-4">
+			    <div class="card" id="card11">
+			      <div class="card-body">
+			        <img src="http://www.quickmeme.com/img/7d/7d57bae605b36c8a246205c9fa15889e347b55b7d92a39e2db943c758a43e91d.jpg" alt="meme3" length="200" width="200">
+			        <a href="#" id="meme3" class="btn btn-primary">Send Meme</a>
+			      </div>
+			    </div>
+			    <div class="card" id="card12">
+			      <div class="card-body">
+			         <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/17505330_1687244087971478_5405604458972516134_o.jpg?_nc_cat=105&_nc_ht=scontent-lax3-1.xx&oh=60b8c015eaabf85333cc9de1eeb56cc7&oe=5CE951A2" alt="meme6" length="200" width="200">
+			        <a href="#" id="meme6" class="btn btn-primary">Send Meme</a>
+			      </div>
+			    </div>
+			  </div>
 
 
 			</div>

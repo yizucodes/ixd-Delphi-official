@@ -8,7 +8,8 @@ $(document).ready(function() {
     initializePage();
 	listenForMessage();
     listenForSuggestions();
-    listenForRefresh();
+    listenForRefreshArticles();
+    listenForRefreshMemes();
     listenForMemes();
 });
 /*
@@ -18,7 +19,9 @@ function initializePage() {
     $("#card4").hide();
     $("#card5").hide();
     $("#card6").hide();
-
+    $("#card10").hide();
+    $("#card11").hide();
+    $("#card12").hide();
 // //Hide 3 memes
 //     $("#meme4").hide();
 //     $("#meme5").hide();
@@ -53,7 +56,7 @@ function listenForMemes() {
 }
 
 
-function newSuggestions() {
+function newArticles() {
     $("#card1").hide();
     $("#card2").hide();
     $("#card3").hide();
@@ -63,7 +66,7 @@ function newSuggestions() {
 }
 
 
-function originalSuggestions() {
+function originalArticles() {
     $("#card1").show();
     $("#card2").show();
     $("#card3").show();
@@ -72,24 +75,43 @@ function originalSuggestions() {
     $("#card6").hide();
 }
 
+function newMemes() {
+    $("#card7").hide();
+    $("#card8").hide();
+    $("#card9").hide();
+    $("#card10").show();
+    $("#card11").show();
+    $("#card12").show();
+}
 
-function listenForRefresh() {
-    $("#refresh").on("click", function(){
+function originalMemes() {
+    $("#card7").show();
+    $("#card8").show();
+    $("#card9").show();
+    $("#card10").hide();
+    $("#card11").hide();
+    $("#card12").hide();
+}
+
+
+function listenForRefreshArticles() {
+    $("#refreshArticles").on("click", function(){
         if ($("#card1").is(':visible')) {
-            $("#card1").hide();
-            $("#card2").hide();
-            $("#card3").hide();
-            $("#card4").show();
-            $("#card5").show();
-            $("#card6").show();
+            newArticles();
         }
         else {
-            $("#card1").show();
-            $("#card2").show();
-            $("#card3").show();
-            $("#card4").hide();
-            $("#card5").hide();
-            $("#card6").hide();
+            originalArticles();
+        }
+    });
+}
+
+function listenForRefreshMemes() {
+    $("#refreshMemes").on("click", function(){
+        if ($("#card7").is(':visible')) {
+            newMemes();
+        }
+        else {
+            originalMemes();
         }
     });
 }
