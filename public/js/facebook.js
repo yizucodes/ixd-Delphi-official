@@ -1,3 +1,8 @@
+$(document).ready(function() {
+  $('#benjaminChat').hide();
+});
+
+
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
@@ -24,5 +29,6 @@ function changeUser(response) {
   $('.facebookLogin').hide();
   $('#username').text(response.name);
   $('#profilePicture').attr("src",response.picture.data.url);
+  $('#benjaminChat').show();
   //will this upload
 }
